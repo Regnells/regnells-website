@@ -5,11 +5,11 @@
         <link rel="stylesheet" href="{{ url_for('static', filename='styles/mainpage.css') }}">
     </head>
     <body>
-        <div> 
-            <a href="{{ url_for('index') }}">Home</a>
-            <a href="{{ url_for('links') }}">links</a>
-        </div>
-        <hr>
+        <ul>
+                <li><a href="{{ url_for('index') }}">Home</a></li>
+                <li><a href="{{ url_for('links') }}">links</a></li>
+        </ul>
+
         {% block content %}
         {% endblock %}
     </body>
